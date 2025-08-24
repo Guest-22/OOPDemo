@@ -4,7 +4,7 @@ package com.mycompany.oopdemo;
     // Abstraction: Shows the essential features only.
     //              It cannot be instantiated.
     //              Is a template or placeholder for the child class.
-    //              All child class must implement all of the attributes and methods within the abstract parent class
+    //              All child class must implement all of the attributes and methods within the abstract parent class.
     // ----------------------------------------------------------------------------------------
 
 public abstract class Vehicle {
@@ -12,7 +12,7 @@ public abstract class Vehicle {
     // ----------------------------------------------------------------------------------------
     // Encapsulation:   The process of hiding details using the private keyword.
     //                  Private variables are only accessible within this class.
-    //                  Can be accessed using the Setter & Getter method.
+    //                  Can only be accessed using the Setter & Getter method.
     // ----------------------------------------------------------------------------------------
     
     private String brand;
@@ -31,6 +31,9 @@ public abstract class Vehicle {
     // Abstract method: a template to be overriden by the child class; a common  to all child classes.
     public abstract void run();
     
+    public void stop(){
+        System.out.println("The vehicle stops running.....");
+    }
     
     // Getter method:   returns the values of the ff. variables.
     public String getBrand() {
