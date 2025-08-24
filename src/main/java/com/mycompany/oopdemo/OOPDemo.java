@@ -31,5 +31,7 @@ public class OOPDemo {
         // Polymorphism in action: same method, different behavior
         myCar.run();
         myBike.run();
+        myCar.stop();
+        myBike.stop();
     }
 }

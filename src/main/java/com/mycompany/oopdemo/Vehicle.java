@@ -31,9 +31,11 @@ public abstract class Vehicle {
     // Abstract method: a template to be overriden by the child class; a common  to all child classes.
     public abstract void run();
     
+    // A method common to all child class.
     public void stop(){
         System.out.println("The vehicle stops running.....");
     }
+    
     
     // Getter method:   returns the values of the ff. variables.
     public String getBrand() {
