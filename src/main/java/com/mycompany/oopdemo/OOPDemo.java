@@ -28,10 +28,12 @@ public class OOPDemo {
         System.out.println("Car: " + myCar.getBrand() + " " + myCar.getModel() + " (" + myCar.getYear() + ")\n");
         
         
-        // Polymorphism in action: same method, different behavior
+        // Polymorphism in action: same method, different behavior.
         myCar.run();
         myBike.run();
         myCar.stop();
+        
+        // Example of inheritance; not polymorphism.
         myBike.stop();
     }
 }
